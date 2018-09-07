@@ -1,0 +1,411 @@
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+select {
+	height: 100%;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: "Quicksand";
+}
+
+option {
+	font-family: "Quicksand";
+	border: none;
+	box-shadow: 7px 7px 7px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	background-color: #e9e9e9;
+}
+
+.title-bar {
+	width: 100%;
+	height: 60px;
+	background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+.title-bar__menu {
+	width: 20%;
+
+	display: flex;
+	align-items: center;
+	img {
+		margin-left: 40px;
+	}
+}
+
+.title-bar__app-title {
+	width: 30%;
+	font-weight: bold;
+	font-size: 24px;
+	font-family: 'Quicksand';
+	color: white;
+	text-align: center;
+
+	display: flex;
+	align-items: center;
+}
+
+.title-bar__settings {
+	width: 50%;
+
+	display: flex;
+	align-items: center;
+	img {
+		width: 40px;
+		height: 40px;
+		margin-left: auto;
+		margin-right: 40px;
+	}
+}
+
+.container__navbar {
+	width: 100%;
+	height: 60px;
+	padding-top: 10px;
+	background-color: white;
+	box-shadow: 7px 7px 7px 0 rgba(0,0,0,0.2);
+
+	display: flex;
+	justify-content: center;
+}
+
+.navbar__elements {
+	width: 65%;
+	height: 100%;
+
+	display: flex;
+	justify-content: center;
+}
+
+.elements__element {
+	width: 33%;
+	height: 100%;
+	background-color: white;
+	font-weight: 580;
+	font-family: "Roboto";
+	font-size: 18px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.element__icon {
+	img {
+		width: 40px;
+		height: 40px;
+		margin-right: 20px;
+	}
+}
+
+.add-button__icon {
+	width: 60px;
+	height: 60px;
+	margin-top: 400px;
+	margin-right: 40px;
+	margin-left: 92%;
+	border: 2px solid #FBAB7E;
+	border-radius: 50%;
+	background-color: #FBAB7E;
+    background-image: linear-gradient(45deg, #FBAB7E 30%, #F7CE68 90%);
+	position: fixed;
+}
+
+.container__chart {
+	width: 99%;
+	height: 530px;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	border: 1px solid #e9e9e9;
+	border-radius: 5px;
+}
+
+.chart__navbar {
+	width: 100%;
+	height: 60px;
+	background-color: #fafafa;
+	border-radius: 5px 5px 0 0;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.select-time {
+	width: 100px;
+	margin-left: 40px;
+}
+
+.select-meal {
+	width: 180px;
+	margin-right: 40px;
+}
+
+.chart__graph {
+	width: 100%;
+	height: 410px;
+}
+
+.chart__footer {
+	width: 100%;
+	height: 60px;
+	background-color: #fafafa;
+	border-radius: 0 0 5px 5px;
+}
+
+.footer__legend {
+	width: 60%;
+	height: 100%;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: 'Quicksand';
+
+	display: flex;
+	justify-content: space-around;
+}
+
+.legend__hypoglycemia {
+	height: 100%;
+	color: #551A8B;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hypoglycemia__color {
+	width: 10px;
+	height: 10px;
+	margin-right: 10px;
+	border-radius: 50%;
+	background-color: #551A8B;
+}
+
+.legend__low {
+	height: 100%;
+	color: #FF69B4;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.low__color {
+	width: 10px;
+	height: 10px;
+	margin-right: 10px;
+	border-radius: 50%;
+	background-color: #FF69B4;
+}
+
+.legend__ok {
+	height: 100%;
+	color: #00FF00;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ok__color {
+	width: 10px;
+	height: 10px;
+	margin-right: 10px;
+	border-radius: 50%;
+	background-color: #00FF00;
+}
+
+.legend__high {
+	height: 100%;
+	color: #73DCFF;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.high__color {
+	width: 10px;
+	height: 10px;
+	margin-right: 10px;
+	border-radius: 50%;
+	background-color: #73DCFF;
+}
+
+.legend__hyperglycemia {
+	height: 100%;
+	color: #FFA500;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hyperglycemia__color {
+	width: 10px;
+	height: 10px;
+	margin-right: 10px;
+	border-radius: 50%;
+	background-color: #FFA500;
+}
+
+.container__circle-chart {
+	width: 99%;
+	height: 420px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	border: 1px solid #e9e9e9;
+	border-radius: 5px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;	
+}
+
+.circle-chart__navbar {
+	width: 100%;
+	height: 60px;
+	border-radius: 5px 5px 0 0;
+	background-color: #fafafa;
+}
+
+.navbar__elements {
+	width: 45%;
+	height: 100%;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: 'Quicksand';
+
+	display: flex;
+	justify-content: space-around;
+}
+
+.elements__breakfast {
+	height: 100%;
+	color: #00FF00;;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.breakfast__color {
+	width: 10px;
+	height: 10px;
+	margin-right: 10px;
+	border-radius: 50%;
+	background-color: #00FF00;
+}
+
+.elements__lunch {
+	height: 100%;
+	color: #EEEE00;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.lunch__color {
+	width: 10px;
+	height: 10px;
+	margin-right: 10px;
+	border-radius: 50%;
+	background-color: #EEEE00;
+}
+
+.elements__dinner {
+	height: 100%;
+	color: #FFA500;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.dinner__color {
+	width: 10px;
+	height: 10px;
+	margin-right: 10px;
+	border-radius: 50%;
+	background-color: #FFA500;
+}
+
+.elements__other {
+	height: 100%;
+	color: #73DCFF;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.other__color {
+	width: 10px;
+	height: 10px;
+	margin-right: 10px;
+	border-radius: 50%;
+	background-color: #73DCFF;
+}
+
+.circle-chart__circle {
+	width: 300px;
+	height: 300px;
+	margin-bottom: 30px;
+	border-radius: 50%;
+	background-color: #FA8BFF;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+
+	display: flex;
+	align-items: center;
+}
+
+.container__health-advice {
+	width: 99%;
+	height: 200px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	border: 1px solid #e9e9e9;
+	border-radius: 5px;
+}
+
+.health-advice__title {
+	margin-top: 20px;
+	margin-left: 40px;
+	font-weight: bold;
+	font-size: 22px;
+	font-family: 'Quicksand';
+}
+
+.health-advice__content {
+	width: 80%;
+	margin-top: 30px;
+	margin-left: 40px;
+	font-style: italic;
+	font-family: 'Lato';
+}
